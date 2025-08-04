@@ -23,50 +23,25 @@
             font-weight: bold;
         }
         .button:hover { background-color: #d4ac0d; color: white; }
-        .filter-btn {
-            margin: 5px;
-            padding: 8px 16px;
-            background: #f39c12;
-            color: black;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .filter-btn:hover { background: #e67e22; color: white; }
     </style>
-    <script>
-        function filterGroup(group) {
-            const rows = document.querySelectorAll("table tr[data-group]");
-            rows.forEach(row => {
-                row.style.display = (group === 'all' || row.dataset.group === group) ? '' : 'none';
-            });
-        }
-    </script>
 </head>
 <body>
     <h1>รวมลิงก์ระบบพักยก AI</h1>
-    <div style="text-align: center;">
+    <div style="text-align:center; margin-bottom:10px;">
         <a href="manual-with-video.html" class="button">📘 เปิดคู่มือ</a>
     </div>
-    <div style="text-align: center; margin-top: 20px;">
-        <button class="filter-btn" onclick="filterGroup('all')">ทั้งหมด</button>
-        <button class="filter-btn" onclick="filterGroup('muay')">🥊 มวย</button>
-        <button class="filter-btn" onclick="filterGroup('cow')">🐃 วัวชน</button>
-        <button class="filter-btn" onclick="filterGroup('chicken')">🐓 ไก่ชน</button>
-    </div>
     <table>
-        <tr>
-            <th>ลำดับ</th><th>ชื่อกลุ่ม</th><th>ลิงก์หลัก</th><th>ยัดแผล</th><th>แก้แผล</th>
-        </tr>
-        <tr data-group="muay"><td>01</td><td>ขัวญรอง</td><td><a class="button" href="https://boxingthailand.com/ConfigKwan/nav.php" target="_blank">คลิก</a></td><td><a class="button" href="https://boxingthailand.com/ConfigKwan/dev2.php" target="_blank">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigKwan/logging.php" target="_blank">คลิก</a></td></tr>
-        <tr data-group="muay"><td>02</td><td>MUAY888</td><td><a class="button" href="https://duck98.com/ConfigBotx/login.php" target="_blank">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigBotx/dev2.php" target="_blank">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigBotx/logging.php" target="_blank">คลิก</a></td></tr>
-        <tr data-group="muay"><td>03</td><td>BK MUAITHAI</td><td><a class="button" href="https://duck98.com/ConfigBoty/login.php" target="_blank">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigBoty/dev2.php" target="_blank">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigBoty/logging.php" target="_blank">คลิก</a></td></tr>
-        <tr data-group="cow"><td>04</td><td>วัวชน New</td><td><a class="button" href="https://duck98.com/Jaojom/nav.php?page=realtime" target="_blank">คลิก</a></td><td><a class="button" href="https://duck98.com/Jaojom/dev2.php" target="_blank">คลิก</a></td><td><a class="button" href="https://duck98.com/Jaojom/logging.php" target="_blank">คลิก</a></td></tr>
-        <tr data-group="cow"><td>05</td><td>รักวัวชน651</td><td><a class="button" href="https://duck98.com/ConfigBOT/login.php" target="_blank">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigBOT/dev2.php" target="_blank">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigBOT/logging.php" target="_blank">คลิก</a></td></tr>
-        <tr data-group="muay"><td>06</td><td>พักยกมหาเฮง999</td><td><a class="button" href="https://duck98.com/ConfigMahaheng/login.php" target="_blank">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigMahaheng/dev2.php" target="_blank">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigMahaheng/logging.php" target="_blank">คลิก</a></td></tr>
-        <tr data-group="chicken"><td>07</td><td>ไก่ชนหนุกหนาน</td><td><a class="button" href="https://duck98.com/ConfigNuknan/login.php" target="_blank">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigNuknan/dev2.php" target="_blank">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigNuknan/logging.php" target="_blank">คลิก</a></td></tr>
-        <tr data-group="muay"><td>08</td><td>พักยกวาดี้</td><td><a class="button" href="https://duck98.com/ConfigBotfull2/login.php" target="_blank">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigBotfull2/dev2.php" target="_blank">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigBotfull2/logging.php" target="_blank">คลิก</a></td></tr>
-        <tr data-group="muay"><td>09</td><td>ฟูออฟชั่น</td><td><a class="button" href="https://duck98.com/ConfigBotfull/login.php" target="_blank">คลิก</a></td><td><a class="button" href="google" target="_blank">คลิก</a></td><td><a class="button" href="google" target="_blank">คลิก</a></td></tr>
+        <tr><th>ลำดับ</th><th>ชื่อกลุ่ม</th><th>ลิงก์หลัก</th><th>ยัดแผล</th><th>แก้แผล</th></tr>
+        <tr><td>01</td><td>ขัวญรอง</td><td><a class="button" href="https://boxingthailand.com/ConfigKwan/nav.php">คลิก</a></td><td><a class="button" href="https://boxingthailand.com/ConfigKwan/dev2.php">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigKwan/logging.php">คลิก</a></td></tr>
+        <tr><td>02</td><td>MUAY888</td><td><a class="button" href="https://duck98.com/ConfigBotx/login.php">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigBotx/dev2.php">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigBotx/logging.php">คลิก</a></td></tr>
+        <tr><td>03</td><td>BK MUAITHAI</td><td><a class="button" href="https://duck98.com/ConfigBoty/login.php">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigBoty/dev2.php">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigBoty/logging.php">คลิก</a></td></tr>
+        <tr><td>04</td><td>วัวชน New</td><td><a class="button" href="https://duck98.com/Jaojom/nav.php?page=realtime">คลิก</a></td><td><a class="button" href="https://duck98.com/Jaojom/dev2.php">คลิก</a></td><td><a class="button" href="https://duck98.com/Jaojom/logging.php">คลิก</a></td></tr>
+        <tr><td>05</td><td>รักวัวชน651</td><td><a class="button" href="https://duck98.com/ConfigBOT/login.php">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigBOT/dev2.php">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigBOT/logging.php">คลิก</a></td></tr>
+        <tr><td>06</td><td>พักยกมหาเฮง999</td><td><a class="button" href="https://duck98.com/ConfigMahaheng/login.php">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigMahaheng/dev2.php">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigMahaheng/logging.php">คลิก</a></td></tr>
+        <tr><td>07</td><td>ไก่ชนหนุกหนาน</td><td><a class="button" href="https://duck98.com/ConfigNuknan/login.php">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigNuknan/dev2.php">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigNuknan/logging.php">คลิก</a></td></tr>
+        <tr><td>08</td><td>พักยกวาดี้</td><td><a class="button" href="https://duck98.com/ConfigBotfull2/login.php">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigBotfull2/dev2.php">คลิก</a></td><td><a class="button" href="https://duck98.com/ConfigBotfull2/logging.php">คลิก</a></td></tr>
+        <tr><td>09</td><td>ฟูออฟชั่น</td><td><a class="button" href="https://duck98.com/ConfigBotfull/login.php">คลิก</a></td><td><a class="button" href="google">คลิก</a></td><td><a class="button" href="google">คลิก</a></td></tr>
+        <tr><td>10</td><td>ไก่มีด เพชรภูผา</td><td><a class="button" href="https://duck98.com/ConfigMuaytai/nav.php?page=realtime">คลิก</a></td><td><a class="button" href="#">-</a></td><td><a class="button" href="#">-</a></td></tr>
     </table>
 </body>
 </html>
